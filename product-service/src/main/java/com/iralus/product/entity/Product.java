@@ -57,5 +57,6 @@ public class Product {
     )
     private Model model;
     @Column(name = "status")
-    private Long status;
+    @Enumerated(EnumType.ORDINAL)
+    private Status status;
 }

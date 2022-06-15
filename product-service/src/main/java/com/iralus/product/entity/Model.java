@@ -34,4 +34,6 @@ public class Model {
             referencedColumnName = "brandId"
     )
     private Brand brand;
+    @Enumerated(EnumType.ORDINAL)
+    private Status status;
 }

@@ -25,4 +25,6 @@ public class Brand {
     private Long brandId;
     @Column(name = "brand_name")
     private String BrandName;
+    @Enumerated(EnumType.ORDINAL)
+    private Status status;
 }

@@ -40,9 +40,7 @@ public class Product {
     private Double height;
     @Column(name = "weight")
     private Double weight;
-    @ManyToOne(
-            cascade = CascadeType.ALL
-    )
+    @ManyToOne(cascade = {CascadeType.ALL})
     @JoinColumn(
             name = "brand_id",
             referencedColumnName = "brandId"

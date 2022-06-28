@@ -13,4 +13,5 @@ public interface BrandService {
     Brand fetchBrandById(Long brandId);
     Brand updateBrand(Long brandId, Brand brand);
     Brand deleteBrand(Long brandId);
+    Brand fetchBrandByName(String brandName);
 }

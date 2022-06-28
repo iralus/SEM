@@ -1,6 +1,7 @@
 package com.iralus.product.entity;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -11,6 +12,7 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class Brand {
     @Id
     @SequenceGenerator(
@@ -24,7 +26,7 @@ public class Brand {
     )
     private Long brandId;
     @Column(name = "brand_name")
-    private String BrandName;
+    private String brandName;
     @Enumerated(EnumType.ORDINAL)
     private Status status;
 }

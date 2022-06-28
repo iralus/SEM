@@ -53,4 +53,9 @@ public class BrandServiceImpl implements BrandService {
         brandRepository.delete(brand);
         return brand;
     }
+
+    @Override
+    public Brand fetchBrandByName(String brandName) {
+        return brandRepository.findByBrandName(brandName);
+    }
 }
